@@ -1,0 +1,285 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+    
+    <div class="global">
+
+        <div id="nav">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+                        
+                        {{widget('space', 'space', {'height': '20'})|raw}}
+                        {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                        {{widget('space', 'space', {'height': '20'})|raw}}
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--header-->
+        <header>
+
+            <div class="header">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <article class="span12">
+
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                            <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <div id="main">
+            <div class="main-top">
+                <div class="main-bottom">
+
+                    <div class="showcase">
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <article class="span12">
+
+                                    <div class="slogan">
+                                        {{widget('content', 's-text1', {content: '<span>Pasta with Roasted Summer</span>', lines: 'all'})|raw}}
+                                        {{widget('content', 's-text2', {content: '<strong>Vegetables and Basil</strong>', lines: 'all'})|raw}}
+                                    </div>
+                                    {{widget('space', 'space', {'height': '20'})|raw}}
+
+                                    {{widget('responsiveslideshow', 'responsiveslideshow', {'duration':'3', 'transSpeed': '1000', 'transType': 'fade', 'showButtons': true, 'showBullets': true, 'allowPause': true, 'allowLoop': true, 'images':[{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/500x1170', 'title':'test title', 'description': 'test desc'},{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/500x1170', 'title':'test title', 'description': 'test desc'},{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/500x1170', 'title':'test title', 'description': 'test desc'},{'imageHeight':'500', 'imageWidth':'1170', 'url':'http://placehold.it/500x1170', 'title':'test title', 'description': 'test desc'}]})|raw}}
+                                    {{widget('space', 'space', {'height': '30'})|raw}}
+
+                                    {{widget('content', 'content', {content: '<h2 class="red center">food + drink + rest</h2>', lines: 'all'})|raw}}
+                                    {{widget('content', 'content', {content: '<p class="center"><strong>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna.</strong></p>', lines: 'all'})|raw}}    
+                                    {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    <div class="row services center">
+
+                                        <article class="span3">
+
+                                            <div class="price">
+                                                {{widget('image', 'price-image1', { 'src': asset('images/icon1.png'), 'imageWidth': '50px'})|raw}}
+                                                <div class="title">
+                                                    {{widget('content', 'price-title1', {content: '<h5>Traditional</h5>', lines: 'all'})|raw}}
+                                                    {{widget('content', 'price-title1', {content: '<h5>cuisine</h5>', lines: 'all'})|raw}}
+                                                </div>
+                                                {{widget('content', 'price-text1', {content: '<p>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>', lines: 'all'})|raw}}
+                                                {{widget('button', 'price-button1', {italic: false, text:'read more', 'align':'widget-align-center'})|raw}}
+                                            </div>
+
+                                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                        </article>
+
+                                        <article class="span3">
+
+                                            <div class="price">
+                                                {{widget('image', 'price-image2', { 'src': asset('images/icon2.png'), 'imageWidth': '78px'})|raw}}
+                                                <div class="title">
+                                                    {{widget('content', 'price-title1', {content: '<h5>good</h5>', lines: 'all'})|raw}}
+                                                    {{widget('content', 'price-title1', {content: '<h5>rest</h5>', lines: 'all'})|raw}}
+                                                </div>
+                                                {{widget('content', 'price-text1', {content: '<p>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>', lines: 'all'})|raw}}
+                                                {{widget('button', 'price-button2', {italic: false, text:'read more', 'align':'widget-align-center'})|raw}}
+                                            </div>
+                                            
+                                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                        </article>
+
+                                        <article class="span3">
+
+                                            <div class="price">
+                                                {{widget('image', 'price-image1', { 'src': asset('images/icon3.png'), 'imageWidth': '55px'})|raw}}
+                                                <div class="title">
+                                                    {{widget('content', 'price-title1', {content: '<h5>great</h5>', lines: 'all'})|raw}}
+                                                    {{widget('content', 'price-title1', {content: '<h5>service</h5>', lines: 'all'})|raw}}
+                                                </div>
+                                                {{widget('content', 'price-text1', {content: '<p>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>', lines: 'all'})|raw}}
+                                                {{widget('button', 'price-button3', {italic: false, text:'read more', 'align':'widget-align-center'})|raw}}
+                                            </div>
+                                            
+                                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                        </article>
+
+                                        <article class="span3">
+
+                                            <div class="price">
+                                                {{widget('image', 'price-image1', { 'src': asset('images/icon4.png'), 'imageWidth': '44px'})|raw}}
+                                                <div class="title">
+                                                    {{widget('content', 'price-title1', {content: '<h5>best</h5>', lines: 'all'})|raw}}
+                                                    {{widget('content', 'price-title1', {content: '<h5>cooks</h5>', lines: 'all'})|raw}}
+                                                </div>
+                                                {{widget('content', 'price-text1', {content: '<p>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>', lines: 'all'})|raw}}
+                                                {{widget('button', 'price-button4', {italic: false, text:'read more', 'align':'widget-align-center'})|raw}}
+                                            </div>
+                                            
+                                            {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                        </article>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--content-->
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <article class="span12">
+
+                                {{zone('main')|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div> 
+            </div> 
+        </div>
+
+        <div id="bottom">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <section class="span12">
+
+                        <div class="row">
+
+                            <article class="span3">
+
+                                <div class="banner color1">
+
+                                    {{widget('content', 'text1', {content: '<span class="text1">every friday:</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text2', {content: '<span class="text1">folk-rock band</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text3', {content: '<p><span class="text1">doors:  9:00 pm</span></p>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text4', {content: '<span class="text1">every friday:</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text5', {content: '<span class="text1">indie-rock band</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text6', {content: '<span class="text1">doors:  4:00 pm</span>', lines: 'all'})|raw}}
+
+                                </div>
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="banner color2 new">
+
+                                    {{widget('content', 'text7', {content: '<span class="text1">cater your next party with </span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text8', {content: '<span class="text1">“La Panorama”</span>', lines: 'all'})|raw}}
+
+                                </div>
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="banner color3">
+
+                                    {{widget('content', 'text9', {content: '<span class="text1">lunch from $5.99</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text10', {content: '<span class="text1">Try our delicious lunch menu from just $5.99</span>', lines: 'all'})|raw}}
+
+                                </div>
+
+                            </article>
+
+                            <article class="span3">
+
+                                <div class="banner color4">
+
+                                    {{widget('content', 'text11', {content: '<span class="text1">25% off for students all year!</span>', lines: 'all'})|raw}}
+                                    {{widget('content', 'text12', {content: '<span class="text1">Plus enjoy our other tempting student offers </span>', lines: 'all'})|raw}}
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--footer-->
+        <footer>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <section class="span12">
+
+                        <div class="row">
+
+                            <article class="span8">
+
+                                {{widget('companyname', 'companyname', {"business": "La Panorama"})|raw}}
+                                {{widget('content', 'copyright_copy', {content: '&nbsp;&copy;&nbsp;2013', lines: 'all'})|raw}}
+                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span4">
+
+                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</div>
+
+{% endblock %}

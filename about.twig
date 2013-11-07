@@ -1,0 +1,214 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bg-glow">
+
+    <div class="global">
+
+        <div id="nav">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="span12">
+                        
+                        {{widget('space', 'space', {'height': '20'})|raw}}
+                        {{widget('navigation', 'navigation', {'align': 'left'})|raw}}
+                        {{widget('space', 'space', {'height': '20'})|raw}}
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--header-->
+        <header>
+
+            <div class="header">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <article class="span12">
+
+                            {{widget('space', 'space', {'height': '50'})|raw}}
+                            <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                            {{widget('space', 'space', {'height': '30'})|raw}}
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!--content-->
+
+        <div id="main">
+            <div class="main-top">
+                <div class="main-bottom">
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <article class="span12">
+
+                                <div class="row">
+
+                                    <article class="span4">
+
+                                        {{widget('content', 'title1', {content: '<h2>about us</h2>', lines: 'all'})|raw}}
+                                        <figure>{{widget('image', 'image1', { 'src': asset('images/page2-img1.jpg'), 'imageWidth': '400px'})|raw}}</figure>
+                                        {{widget('content', 'text1', {content: '<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.</p><p>Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    </article>
+
+                                    <article class="span4">
+
+                                        {{widget('content', 'title2', {content: '<h2>history</h2>', lines: 'all'})|raw}}
+                                        <dl class="hist">
+                                            <dt>2001 -</dt>
+                                            <dd>{{widget('content', 'text2', {content: '<p>Praesent vestibulum molestie lacus. Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>2003 -</dt>
+                                            <dd>{{widget('content', 'text3', {content: '<p>Molestie lacus. Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>2005 -</dt>
+                                            <dd>{{widget('content', 'text4', {content: '<p>Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>2008 -</dt>
+                                            <dd>{{widget('content', 'text5', {content: '<p>Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>2012 -</dt>
+                                            <dd>{{widget('content', 'text6', {content: '<p>Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>', lines: 'all'})|raw}}</dd>
+                                        </dl>
+                                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    </article>
+
+                                    <article class="span4">
+
+                                        {{widget('content', 'title3', {content: '<h2>quality</h2>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text8', {content: '<p><strong>Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat.</strong></p>', lines: 'all'})|raw}}
+                                        {{widget('content', 'text9', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>', lines: 'all'})|raw}}
+                                        <ul class="list">
+                                            <li>{{widget('content', 'list-text1', {content: 'Cum sociis natoque penatibus', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text2', {content: 'Magnis dis parturient ', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text3', {content: 'Nulla dui feugiat malesuada', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text4', {content: 'Morbi nunc odio gravida ', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text5', {content: 'Maecenas tristique orci ac sem', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text6', {content: 'Duis ultricies pharetra magna', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text6', {content: 'Fusce suscipit varius mi', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text6', {content: 'Cum sociis natoque penatibus', lines: 'all'})|raw}}</li>
+                                        </ul>
+                                        {{widget('content', 'text10', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    </article>
+
+                                </div>
+
+                                {{widget('content', 'title4', {content: '<h2>our team</h2>', lines: 'all'})|raw}}
+
+                                <div class="row">
+
+                                    <article class="span3">
+
+                                        <figure>{{widget('image', 'team-image1', { 'src': asset('images/team-img1.jpg'), 'imageWidth': '400px'})|raw}}</figure>
+                                        {{widget('content', 'subtitle1', {content: '<strong>Mark Johnson</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    </article>
+
+                                    <article class="span3">
+
+                                        <figure>{{widget('image', 'team-image2', { 'src': asset('images/team-img2.jpg'), 'imageWidth': '400px'})|raw}}</figure>
+                                        {{widget('content', 'subtitle2', {content: '<strong>Bradley Grosh</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    </article>
+
+                                    <article class="span3">
+
+                                        <figure>{{widget('image', 'team-image3', { 'src': asset('images/team-img3.jpg'), 'imageWidth': '400px'})|raw}}</figure>
+                                        {{widget('content', 'subtitle3', {content: '<strong>Jessica Priston</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    </article>
+
+                                    <article class="span3">
+
+                                        <figure>{{widget('image', 'team-image4', { 'src': asset('images/team-img4.jpg'), 'imageWidth': '400px'})|raw}}</figure>
+                                        {{widget('content', 'subtitle4', {content: '<strong>John McCoist</strong>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('space', 'space', {'height': '50'})|raw}}
+
+                                    </article>
+
+                                </div>
+
+                                {{zone('main')|raw}}                    
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div> 
+            </div> 
+        </div>
+
+        <!--footer-->
+        <footer>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <section class="span12">
+
+                        <div class="row">
+
+                            <article class="span8">
+
+                                {{widget('companyname', 'companyname', {"business": "La Panorama"})|raw}}
+                                {{widget('content', 'copyright_copy', {content: '&nbsp;&copy;&nbsp;2013', lines: 'all'})|raw}}
+                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                            <article class="span4">
+
+                                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com', 'linkedin':'http://www.linkedin.com', 'facebook': 'https://www.facebook.com', 'twitter': 'https://twitter.com', 'youtube': 'https://www.youtube.com', 'rss': '#'})|raw}}
+                                {{widget('space', 'space', {'height': '30'})|raw}}
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</div>
+
+{% endblock %}
