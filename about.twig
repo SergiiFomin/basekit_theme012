@@ -69,7 +69,7 @@
 
                                         {{widget('content', 'title1', {content: '<h2>about us</h2>', lines: 'all'})|raw}}
                                         <figure>{{widget('image', 'image1', { 'src': asset('images/page2-img1.jpg'), 'imageWidth': '400px'})|raw}}</figure>
-                                        {{widget('content', 'text1', {content: '<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.</p><p>Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>', lines: 'all'})|raw}}
+                                        {{widget('content', 'about-text', {content: '<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.</p><p>Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>', lines: 'all'})|raw}}
                                         {{widget('space', 'space', {'height': '50'})|raw}}
 
                                     </article>
@@ -78,16 +78,16 @@
 
                                         {{widget('content', 'title2', {content: '<h2>history</h2>', lines: 'all'})|raw}}
                                         <dl class="hist">
-                                            <dt>2001 -</dt>
-                                            <dd>{{widget('content', 'text2', {content: '<p>Praesent vestibulum molestie lacus. Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>', lines: 'all'})|raw}}</dd>
-                                            <dt>2003 -</dt>
-                                            <dd>{{widget('content', 'text3', {content: '<p>Molestie lacus. Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}</dd>
-                                            <dt>2005 -</dt>
-                                            <dd>{{widget('content', 'text4', {content: '<p>Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>', lines: 'all'})|raw}}</dd>
-                                            <dt>2008 -</dt>
-                                            <dd>{{widget('content', 'text5', {content: '<p>Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>', lines: 'all'})|raw}}</dd>
-                                            <dt>2012 -</dt>
-                                            <dd>{{widget('content', 'text6', {content: '<p>Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>{{widget('content', 'history-date1', {content: '2001 -', lines: 'all'})|raw}}</dt>
+                                            <dd>{{widget('content', 'history-text1', {content: '<p>Praesent vestibulum molestie lacus. Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>{{widget('content', 'history-date2', {content: '2003 -', lines: 'all'})|raw}}</dt>
+                                            <dd>{{widget('content', 'history-text2', {content: '<p>Molestie lacus. Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>{{widget('content', 'history-date3', {content: '2005 -', lines: 'all'})|raw}}</dt>
+                                            <dd>{{widget('content', 'history-text3', {content: '<p>Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>{{widget('content', 'history-date4', {content: '2008 -', lines: 'all'})|raw}}</dt>
+                                            <dd>{{widget('content', 'history-text4', {content: '<p>Aenean nonu hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>', lines: 'all'})|raw}}</dd>
+                                            <dt>{{widget('content', 'history-date5', {content: '20012 -', lines: 'all'})|raw}}</dt>
+                                            <dd>{{widget('content', 'history-text5', {content: '<p>Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>', lines: 'all'})|raw}}</dd>
                                         </dl>
                                         {{widget('space', 'space', {'height': '50'})|raw}}
 
@@ -105,8 +105,8 @@
                                             <li>{{widget('content', 'list-text4', {content: 'Morbi nunc odio gravida ', lines: 'all'})|raw}}</li>
                                             <li>{{widget('content', 'list-text5', {content: 'Maecenas tristique orci ac sem', lines: 'all'})|raw}}</li>
                                             <li>{{widget('content', 'list-text6', {content: 'Duis ultricies pharetra magna', lines: 'all'})|raw}}</li>
-                                            <li>{{widget('content', 'list-text6', {content: 'Fusce suscipit varius mi', lines: 'all'})|raw}}</li>
-                                            <li>{{widget('content', 'list-text6', {content: 'Cum sociis natoque penatibus', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text7', {content: 'Fusce suscipit varius mi', lines: 'all'})|raw}}</li>
+                                            <li>{{widget('content', 'list-text8', {content: 'Cum sociis natoque penatibus', lines: 'all'})|raw}}</li>
                                         </ul>
                                         {{widget('content', 'text10', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p>', lines: 'all'})|raw}}
                                         {{widget('space', 'space', {'height': '50'})|raw}}
@@ -123,7 +123,7 @@
 
                                         <figure>{{widget('image', 'team-image1', { 'src': asset('images/team-img1.jpg'), 'imageWidth': '400px'})|raw}}</figure>
                                         {{widget('content', 'subtitle1', {content: '<strong>Mark Johnson</strong>', lines: 'all'})|raw}}
-                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text1', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
                                         {{widget('space', 'space', {'height': '50'})|raw}}
 
                                     </article>
@@ -132,7 +132,7 @@
 
                                         <figure>{{widget('image', 'team-image2', { 'src': asset('images/team-img2.jpg'), 'imageWidth': '400px'})|raw}}</figure>
                                         {{widget('content', 'subtitle2', {content: '<strong>Bradley Grosh</strong>', lines: 'all'})|raw}}
-                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text2', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
                                         {{widget('space', 'space', {'height': '50'})|raw}}
 
                                     </article>
@@ -141,7 +141,7 @@
 
                                         <figure>{{widget('image', 'team-image3', { 'src': asset('images/team-img3.jpg'), 'imageWidth': '400px'})|raw}}</figure>
                                         {{widget('content', 'subtitle3', {content: '<strong>Jessica Priston</strong>', lines: 'all'})|raw}}
-                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text3', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
                                         {{widget('space', 'space', {'height': '50'})|raw}}
 
                                     </article>
@@ -150,7 +150,7 @@
 
                                         <figure>{{widget('image', 'team-image4', { 'src': asset('images/team-img4.jpg'), 'imageWidth': '400px'})|raw}}</figure>
                                         {{widget('content', 'subtitle4', {content: '<strong>John McCoist</strong>', lines: 'all'})|raw}}
-                                        {{widget('content', 'team-text', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
+                                        {{widget('content', 'team-text4', {content: '<p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>', lines: 'all'})|raw}}
                                         {{widget('space', 'space', {'height': '50'})|raw}}
 
                                     </article>
