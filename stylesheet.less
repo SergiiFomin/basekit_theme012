@@ -27,6 +27,13 @@
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        18px;
 
+// Social
+// -------------------------
+@socialColor:             @color-swatch1;
+@socialColorHover:        @color-swatch3;
+@socialBackground:        @color-swatch2;
+@socialBackgroundHover:   @color-swatch1;
+
 @headingsFontFamily:    @sansFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         @color-swatch2; // empty to use BS default, @textColor
@@ -219,38 +226,36 @@
 
 /*Forms*/
 
-.container{
-  textarea{
-    resize: none;
-  }
-  select, 
-  textarea, 
-  input[type="text"], 
-  input[type="password"], 
-  input[type="datetime"], 
-  input[type="datetime-local"], 
-  input[type="date"], 
-  input[type="month"], 
-  input[type="time"], 
-  input[type="week"], 
-  input[type="number"], 
-  input[type="email"], 
-  input[type="url"], 
-  input[type="search"], 
-  input[type="tel"], 
-  input[type="color"], 
-  .uneditable-input{
-    font-size: 12px;
-    .box-sizing(border-box);
-    box-shadow: none;
-    margin-bottom: 20px !important;
-    color: @color-swatch2 !important;
-    .transition(all .2s linear);
-    border: 1px solid #f6f0ec !important;
-    &:focus{
-      background: @color-swatch5 !important;
-      color: @color-swatch1 !important;
-    }
+textarea{
+  resize: none;
+}
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input{
+  font-size: 12px;
+  .box-sizing(border-box);
+  box-shadow: none;
+  margin-bottom: 20px !important;
+  color: @color-swatch2 !important;
+  .transition(all .2s linear);
+  border: 1px solid #f6f0ec !important;
+  &:focus{
+    background: @color-swatch5 !important;
+    color: @color-swatch1 !important;
   }
 }
 
@@ -506,12 +511,6 @@ ul li{
     }
   }
   .slideshow-widget-controls{
-    /*bottom: 0px;
-    position: absolute;
-    background-color: #d1ccc2;
-    padding: 8px 6px;
-    overflow: hidden;
-    right: 0;*/
     background: none;
     width: 100%;
     text-align: center;
@@ -527,7 +526,6 @@ ul li{
       .border-radius(1000px);
       margin: 0px 2px;
       cursor: pointer;
-      /*float: left;*/
       &:hover,
       &.selected{
         background-color: @color-swatch3 !important;
@@ -553,12 +551,24 @@ ul li{
       /*border: 5px solid #d1ccc2;*/
     }
   }
+  .content-wrapper{
+    text-align: center;
+    .title{
+      display: block;
+      padding-top: 60px;
+      font: 30px/40px Times New Roman, Times, serif;
+      color: @color-swatch3;
+      text-transform: capitalize;
+    }
+  }
 }
 
 /*--- header end ------*/
 
 /*------ content ------- */
 
+button.button,
+input.button,
 .btn {
   display: inline-block;
   border: none;
@@ -575,7 +585,6 @@ ul li{
   padding: 7px 18px;
   font: 10px/17px @BevanFontFamily;
   text-transform: uppercase;
-  margin-bottom: -14px;
   position: relative;
   z-index: 2;
   &:hover, &:focus, &:active {
@@ -598,6 +607,7 @@ header, footer, #content{
 
 .gallery-widget{
   margin: 0;
+  overflow: hidden;
   li{
     float: left;
     list-style: none;
@@ -625,38 +635,36 @@ header, footer, #content{
 
 /* end background image */
 
-.container{
-  input, textarea {
-    position: relative;
-    outline: none;
-    border: none;
-    .border-radius(0);
-    .box-shadow(0 0 0);
+input, textarea {
+  position: relative;
+  outline: none;
+  border: none;
+  .border-radius(0);
+  .box-shadow(0 0 0);
 
-    line-height: 20px;
-    color: @color-swatch2;
-    padding: 5px 10px;
-    width: 100%;
-    margin: 0;
-    &:focus {
-      .box-shadow(0 0 0);
-      border: none;
-      background: none;
-    }
-    &:focus:invalid:focus{
-      .box-shadow(0 0 0);
-      border: none;
-      background: none;
-    }
+  line-height: 20px;
+  color: @color-swatch2;
+  padding: 5px 10px;
+  width: 100%;
+  margin: 0;
+  &:focus {
+    .box-shadow(0 0 0);
+    border: none;
+    background: none;
   }
-  input{
-    .size(30px, 100%);   
-    .box-sizing(border-box); 
+  &:focus:invalid:focus{
+    .box-shadow(0 0 0);
+    border: none;
+    background: none;
   }
-  textarea{
-    width: 100%;
-    .box-sizing(border-box); 
-  }
+}
+input{
+  .size(30px, 100%);   
+  .box-sizing(border-box); 
+}
+textarea{
+  width: 100%;
+  .box-sizing(border-box); 
 }
 
 p {
@@ -691,6 +699,46 @@ a{
   }
 }
 
+.widget.logo{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  .logo{
+    margin: -27px 0 0;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    &:before, &:after {
+      content: "";
+      display: block;
+      width: 161px;
+      height: 1px;
+      position: relative;
+      top: 33px;      
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:before {
+      background-image:image('/images/template/border-left.png');
+        left: -205px;
+    }
+    &:after {
+      background-image:image('/images/template/border-right.png');
+        right: -205px;
+    }
+    img{
+      display: block;
+    }
+    a{
+      display: inline-block;
+    }   
+  } 
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -703,62 +751,6 @@ h1{
   color: @font-swatch1-color;
   font: 58px/60px Times New Roman, Times, serif;
   color: @color-swatch6;
-  &.brand{
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    text-align: center;
-    .companyheader{
-      display: inline-block;
-    }
-    a{
-      color: @color-swatch3;
-      text-decoration: none;
-      position: relative;
-      &:hover{
-        color: @color-swatch1;
-      }
-      .logo{
-        margin: -27px 0 0;
-        font-size: 0;
-        line-height: 0;
-        text-align: center;
-        position: relative;
-          &:before, &:after {
-            content: "";
-            display: block;
-            width: 161px;
-            height: 1px;
-            position: relative;
-            top: 33px;
-            
-            background-position: 0 0;
-            background-repeat: no-repeat;
-            position: absolute;
-          }
-        &:before {
-          background-image:image('/images/template/border-left.png');
-            left: -205px;
-        }
-        &:after {
-          background-image:image('/images/template/border-right.png');
-            right: -205px;
-        }
-        img{
-          display: block;
-        }
-        a{
-          display: inline-block;
-        }   
-      }
-      .company-name{
-        font: bold 14px/26px 'Open Sans';
-        color: #313131;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-    }   
-  }
 }
 
 h2{
@@ -954,6 +946,9 @@ div.price{
   &:hover{
     background-image:image('/images/template/price-hover.png');
     background: rgba(156, 156, 156, .2);
+  }
+  .btn {
+    margin-bottom: -14px;
   }
 }
 
@@ -1197,6 +1192,69 @@ div[id$="copyright_link"]{
   }
 }
 
+.widget.clicktocall a {
+  background-image: image('/images/ic-call.png');
+  background-color: @color-swatch3;
+  background-position: 10px;
+  background-repeat: no-repeat;
+  padding: 10px 10px 10px 38px;
+  margin: 0;
+  color: @color-swatch1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  &:hover {
+    background-color: @color-swatch2;
+    text-decoration: none;
+  }
+}
+
+.widget.tweet {
+   padding: 14px 0;
+   a {
+    padding: 8px 10px 8px 32px;
+    margin: 0;
+    border: 1px solid #057ed0;
+    background-image: image('/images/twitter.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+    margin: 0em;
+    .border-radius(4px);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    font-size:.9em;
+    background-color: #32bbef;
+    color: @color-swatch1;
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    &:hover, &:active {
+      border: 1px solid #096eb3;
+      background-color: #2cacdc;
+    }
+  }
+}
+
+.twitter{
+  ul.twitter{
+    margin: 0;
+    li{
+      list-style: none;
+      margin-bottom: 18px;
+      overflow: hidden;
+      .twitter-profile-pic{
+        float: left;
+        margin-right: 20px;
+      }
+      .twitter-content{
+        p{
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
 .socialicons{
   overflow: hidden;
   .icons {
@@ -1371,7 +1429,7 @@ div[id$="copyright_link"]{
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
-  h1.brand .companyheader {
+  .widget.logo .logo {
     display: block;
   }
   .navigation ul li {

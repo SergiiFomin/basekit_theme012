@@ -38,7 +38,7 @@
                         <article class="span12">
 
                             {{widget('space', 'space', {'height': '50'})|raw}}
-                            <h1 class="brand">{{widget('companyheader', 'companyheader', {"defaultlogo": asset('/images/logo.png')})|raw}}</h1>
+                            {{widget('logo', 'name', {"defaultlogo": asset('images/logo.png')})|raw}}
                             {{widget('space', 'space', {'height': '30'})|raw}}
 
                         </article>
@@ -62,6 +62,8 @@
                         <div class="row">
 
                             <article class="span12">
+
+                                {{zone('main')|raw}}  
 
                                 <div class="row">
 
@@ -157,9 +159,6 @@
 
                                 </div>
 
-                                {{zone('main')|raw}}                    
-                                {{widget('space', 'space', {'height': '30'})|raw}}
-
                             </article>
 
                         </div>
@@ -184,8 +183,7 @@
                             <article class="span8">
 
                                 {{widget('companyname', 'companyname', {"business": "La Panorama"})|raw}}
-                                {{widget('content', 'copyright_copy', {content: '&nbsp;&copy;&nbsp;2013', lines: 'all'})|raw}}
-                                {{widget('content', 'copyright_link', {content: '<a href="#">Privacy Policy</a>', lines: 'all'})|raw}}
+                                {{widget('profile', 'copyright', { 'profileType':'copyright' })|raw}}
                                 {{widget('space', 'space', {'height': '30'})|raw}}
 
                             </article>
